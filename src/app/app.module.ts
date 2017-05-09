@@ -12,6 +12,8 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { UserComponent } from './user/user.component';
+import { RoomComponent } from './room/room.component';
+import { CurrentUserComponent } from './current-user/current-user.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +27,9 @@ export const firebaseConfig = {
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    UserComponent
+    UserComponent,
+    RoomComponent,
+    CurrentUserComponent
   ],
   imports: [
     BrowserModule,

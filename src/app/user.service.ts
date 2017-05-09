@@ -10,8 +10,16 @@ export class UserService {
     this.users = database.list('users');
   }
 
+  getUsers() {
+    return this.users;
+  }
+
   addUser(newUser: User) {
     this.users.push(newUser);
+  }
+
+  getUserById(userId: string) {
+    return this.database.object('users/' + userId);
   }
 
 }

@@ -1,3 +1,4 @@
-<p>
-  welcome works!
-</p>
+<div *ngFor="let user of users | async" (click)="goToDetailPage(user)">
+  <h3>{{user.player_name}}</h3>
+
+</div>
