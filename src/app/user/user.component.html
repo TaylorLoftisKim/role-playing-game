@@ -1,0 +1,21 @@
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input #newPlayerName id="player_name" type="text" class="validate">
+        <label for="player_name">Player Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input #newUserName id="user_name" type="text" class="validate">
+        <label for="user_name">Character Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input #newAge id="age" type="number" class="validate">
+        <label for="age">Age</label>
+      </div>
+    </div>
+    <button (click)="submitForm(newPlayerName.value, newUserName.value, newAge.value); newPlayerName.value=''; newUserName.value=''; newAge.value=''">Add</button>
+  </form>
+</div>
