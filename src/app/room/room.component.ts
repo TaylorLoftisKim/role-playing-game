@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Room } from "../room.model";
 
 @Component({
   selector: 'app-room',
@@ -12,4 +13,7 @@ export class RoomComponent implements OnInit {
   ngOnInit() {
   }
 
+  goToClickedRoom(clickedRoom: Room) {
+    
+  }
 }

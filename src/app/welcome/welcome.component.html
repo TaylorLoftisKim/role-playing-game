@@ -1,4 +1,5 @@
+<h2>If your name is not listed bellow please add user! Else click on your name to begin adventure.</h2>
+<button routerLink="user">Add User</button>
 <div *ngFor="let user of users | async" (click)="goToDetailPage(user)">
   <h3>{{user.player_name}}</h3>
-
 </div>
