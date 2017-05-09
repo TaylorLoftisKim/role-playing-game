@@ -1,3 +1,9 @@
-<p>
-  room works!
-</p>
+<div>
+  <h1>{{(roomToDisplay | async)?.title}}</h1>
+  <div class="row">
+    <div class="card-panel teal">
+      <h5><span class="white-text">{{(roomToDisplay | async)?.prompt}}</span></h5>
+    </div>
+  </div>
+  <button *ngFor="let choice of choicesToDisplay | async" (click)=goToClickedRoom(choice)>{{choice[0]}}</button>
+</div>
